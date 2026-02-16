@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+/* Aurora background utility */
+.aurora-bg {
+  background-image:
+    radial-gradient(1200px 800px at 20% -10%, rgba(34,211,238,.25), transparent 60%),
+    radial-gradient(1000px 700px at 120% 10%, rgba(167,139,250,.25), transparent 60%);
+}
+
+.glass {
+  @apply bg-slate-900/50 border border-slate-800 rounded-2xl shadow-[0_0_0_1px_rgba(148,163,184,.05)];
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-slate-700 bg-slate-800/60 px-3 py-1 text-xs sm:text-sm mr-2 mb-2;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium;
+}
+.btn-primary { @apply bg-cyan-500/90 hover:bg-cyan-400 text-slate-900; }
+.btn-secondary { @apply bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700; }
+.btn-ghost { @apply hover:bg-slate-800/60; }
+.btn-outline { @apply border border-slate-700 hover:bg-slate-800/60; }
